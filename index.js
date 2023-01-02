@@ -30,3 +30,7 @@ app.use('/api/retires', retires)
 app.use(spa)
 
 app.listen(process.env.PORT, process.env.IP, () => console.log('app running...'))
+
+if (process.env.IPV4) {
+    app.listen(process.env.PORT, process.env.IPV4, () => console.log('app running...'))
+}
