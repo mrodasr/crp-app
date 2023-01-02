@@ -5,7 +5,7 @@
     "predev": "node utils/env --dev",
     "prestart": "node utils/env --prod",
     "dev": "nodemon --delay 5s index.js",
-    "start": "node index.js"
+    "start": "pm2 start --name camping index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
